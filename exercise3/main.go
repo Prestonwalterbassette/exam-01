@@ -2,6 +2,9 @@ package main
 
 import "fmt"
 
-func NbrCroissant(s string) int {
-	for i := 0; i <= 
+func main() {
+	for i := 0; i <= '9'; i++ {
+		fmt.Print(string (i))
+	}
+	fmt.Print("\n")
 }
