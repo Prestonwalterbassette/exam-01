@@ -1,8 +1,10 @@
 package main
 
+import "fmt"
+
 func main() {
 	for i := 'a' ; i <= 'z'; i++ {
-		return i
+		fmt.Fprint(i)
 	}
-	return \n
+	fmt.Fprint(\n)
 }
