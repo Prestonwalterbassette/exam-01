@@ -1,5 +1,0 @@
-L'énoncé est:
-
-Ecrire une fonction permettant de vérifier si une chaine de caractère contient une lettre de l'alphabet.
-
-if len<(s) < 1

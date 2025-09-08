@@ -1,0 +1,39 @@
+package main
+
+func Surprise(s string) bool { 
+	
+	if len(s) < 1 {         
+		return false  
+}
+
+	return surprise_annexe(s[0]) || Surprise(s[1:])  
+
+}  
+
+func surprise_annexe(a byte) bool { 
+	
+	return (a <= 'z' && a >= 'a') || (a <= 'Z' && a >= 'A') } 
+
+
+L'énoncé est:
+Ecrire une fonction permettant de vérifier si une chaine de caractère contient une lettre de l'alphabet.
+
+Explication du code:
+if len<(s) < 1{
+	return false
+} 
+-> vérifie si le string a plus d'un caractère sinon il renvoie faux
+
+return surprise_annexe(s[0]) || Surprise(s[1:])  
+s[0] est le premier caractère du string. Surprinexe(s[0]) teste si le premier caractère du string est une lettre ou pas. || est un opérateur logique qui dit 'ou'. 
+s[1:] prend le deuxième caractère du string. Surprise(s[1:]) refait la fonction à partir du deuxième caractère du string.
+
+func surprise_annexe(a byte) bool { 
+	
+	return (a <= 'z' && a >= 'a') || (a <= 'Z' && a >= 'A') } 
+
+func surprise_annexe(a byte) bool {  = une fonction qui demande vrai ou faux.
+a byte : cest le paramètre a avec un byte soit un entier entre 0 et 255.
+-> (a <= 'z' && a >= 'a') vérifie si a est entre l'alphabet, soit de a à z. (a <= 'Z' && a >= 'A') même chose mais en majuscule.
+
+
